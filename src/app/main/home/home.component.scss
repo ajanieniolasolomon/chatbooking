@@ -1,0 +1,70 @@
+.intro-header {
+    height: unset !important;
+}
+
+.intro-2 {
+    background: url("../../../assets/test.jpeg")no-repeat center center;
+    background-size: cover;
+}
+
+.view {
+    height: 100vh !important;
+}
+
+.btn .fa {
+    margin-left: 3px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+
+.ki {
+    background: blue;
+    color: #ff8800;
+}
+
+.ki .scroll {
+    background-color: #A1572F !important;
+    color: red !important;
+}
+
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #424f95 !important;
+    }
+}
+
+h6 {
+    line-height: 1.7;
+}
+
+.rgba-gradient .full-bg-img {
+    background: rgba(0, 0, 0, .55);
+    ;
+}
+
+@media (max-width: 450px) {
+    .margins {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 1020px;
+    }
+}
+
+.card-body {
+    background-color: #ff8800;
+}

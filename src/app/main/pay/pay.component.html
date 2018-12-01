@@ -1,0 +1,14 @@
+<angular4-paystack-embed *ngIf="show" key="pk_test_33c2437bd12c2e1c5358c7708588b0f6e1791c02" email="{{email}}" amount="5000000" ref="{{ref}}" class="'btn btn-primary'" (close)="paymentCancel($event)" (callback)="paymentDone($event)">
+    <span class="spinner spinner-inline">
+      Loading...
+  </span>
+    <span>
+      Loading.</span>
+</angular4-paystack-embed>
+<div>
+    <h5 class="h5 text-center">
+        Card Number: 5060 6666 6666 6666 666 (Verve) Expiry Date: any date in the future CVV: 123 PIN: 1234 OTP: 123456
+    </h5>
+</div>
+
+{{email}};
