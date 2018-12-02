@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import { PaymentService } from '../../share/payment.service';
+import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-pay',
@@ -10,6 +11,7 @@ import { PaymentService } from '../../share/payment.service';
 })
 export class PayComponent implements OnInit {
   hero$;
+  @Output () callback = new EventEmitter();
   show= false;
   email;
   ref;
@@ -21,6 +23,7 @@ private service: PaymentService
   ) {}
 
   ngOnInit() {
+
     this.hero$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) =>
         this.service.makepayment2(params.get('id')))
