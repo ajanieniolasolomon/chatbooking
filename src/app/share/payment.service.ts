@@ -5,7 +5,7 @@ import { HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class PaymentService {
-  heroesUrl= 'https://whatup2.herokuapp.com/api';
+
   constructor(private http: HttpClient) { }
 
   makepayment2(id) {
